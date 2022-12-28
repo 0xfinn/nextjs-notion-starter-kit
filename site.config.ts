@@ -20,6 +20,7 @@ export default siteConfig({
   // twitter: '',
   github: 'vsme',
   zhihu: 'yaavi',
+  bilibili: '164997305',
   // linkedin: '',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL

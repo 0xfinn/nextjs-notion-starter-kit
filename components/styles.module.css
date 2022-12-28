@@ -101,6 +101,10 @@
   color: #0066ff;
 }
 
+.bilibili:hover {
+  color: #00AEEC ;
+}
+
 .github:hover {
   color: #c9510c;
 }
