@@ -388,6 +388,11 @@
   text-align: center;
 }
 
+/* about 图片 高亮 */
+.notion-block-be7166fa2a2e46f2bb1e8a16290cf616 .notion-page-cover-wrapper img {
+  filter: brightness(1.4);
+}
+
 /* 不展示 index 图片 */
 .notion-collection-card-cover {
   display: none;
