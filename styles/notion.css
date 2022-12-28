@@ -205,11 +205,6 @@
   }
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
-  justify-content: center;
-  padding: 2em;
-}
-
 .notion-code {
   background: rgba(249, 250, 251, 1);
   border: 1px solid rgba(229, 231, 235, 1);
@@ -375,10 +370,15 @@
   border-image-slice: 1;
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
+.notion-block-bf2859f509344fabba2361d296a278fe .notion-page-link {
+  justify-content: center;
+  padding: 2em;
+}
+
+.notion-block-bf2859f509344fabba2361d296a278fe .notion-column {
   padding: 0;
 }
 
-.notion-block-260baa77f1e1428b97fb14ac99c7c385 {
+.notion-block-c0e953afb53b4e20afc983490aa336d9 {
   display: none;
 }
