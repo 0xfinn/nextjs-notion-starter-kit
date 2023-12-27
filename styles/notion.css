@@ -210,11 +210,6 @@
   }
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
-  justify-content: center;
-  padding: 2em;
-}
-
 .notion-code {
   background: rgba(249, 250, 251, 1);
   border: 1px solid rgba(229, 231, 235, 1);
@@ -255,8 +250,8 @@
 .notion-orange_background,
 .notion-brown_background,
 .notion-gray_background {
-  padding: 0 0.5rem;
-  margin: 0 -0.5rem 0 -0.25rem;
+  padding: 0 0.6rem 0 0.2rem;
+  margin: 0 -0.5rem 0 -0.1rem;
   border-radius: 0.5rem;
   border-bottom-left-radius: 0.125rem;
   box-decoration-break: clone;
@@ -380,14 +375,43 @@
   border-image-slice: 1;
 }
 
-.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
+/* ---- 新增内容 ------- */
+.notion-block-bf2859f509344fabba2361d296a278fe .notion-page-link {
+  justify-content: center;
+  padding: 2em;
+}
+
+.notion-block-bf2859f509344fabba2361d296a278fe .notion-column {
   padding: 0;
 }
 
-.notion-block-260baa77f1e1428b97fb14ac99c7c385 {
+.notion-block-c0e953afb53b4e20afc983490aa336d9 {
   display: none;
 }
 
+.notion-block-7e6223f61ee34e68aba2932220b50ece, .notion-block-56704a0fce7a4847846e3e71e2cd1a6c {
+  text-align: center;
+}
+
+/* about 图片 高亮 */
+.notion-block-be7166fa2a2e46f2bb1e8a16290cf616 .notion-page-cover-wrapper img {
+  filter: brightness(1.4);
+}
+
+/* 不展示 index 图片 */
+.notion-collection-card-cover {
+  display: none;
+}
+
+.notion-page-no-cover.notion-page-has-image-icon.index-page {
+  padding-top: 0;
+}
+
+.notion-page-icon-hero.notion-page-icon-image {
+  display: none;
+}
+
+/* notion search */
 .notion-search .searchBar {
   box-shadow: var(--fg-color-0) 0px 1px 0px;
 }
@@ -402,4 +426,20 @@
 
 .notion-equation.notion-equation-block{
   align-items: center;
+}
+
+.notion-aside-table-of-contents-header {
+  display: none;
+}
+
+.notion-aside-table-of-contents:before {
+  content: '目录';
+  display: inline-block;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--fg-color-3);
+  font-family: var(--notion-font);
 }
