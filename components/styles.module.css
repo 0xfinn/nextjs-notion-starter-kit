@@ -61,6 +61,12 @@
   padding: 0.5em;
 }
 
+.icp {
+  font-size: 80%;
+  padding: 0.5em;
+  opacity: 0.8;
+}
+
 .settings,
 .social {
   user-select: none;

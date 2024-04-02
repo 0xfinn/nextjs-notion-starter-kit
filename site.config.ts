@@ -12,6 +12,8 @@ export default siteConfig({
   name: 'Yaavi Website',
   domain: 'yaavi.me',
   author: 'Yaavi Sun',
+  showICP: true,
+  ICPInfo: '苏ICP备14028140号',
 
   // open graph metadata (optional)
   description: 'Yaavi 的个人网站，博客文章来自于 Notion 笔记。',

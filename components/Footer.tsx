@@ -37,7 +37,20 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright {currentYear} {config.author}</div>
+      <div className={styles.copyright}>
+        Copyright {currentYear} {config.author}
+        {
+          config.showICP && <a
+            className={styles.icp}
+            href={`//beian.miit.gov.cn`}
+            title={`${config.ICPInfo}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            { config.ICPInfo }
+          </a>
+        }
+      </div>
 
       <div className={styles.settings}>
         {hasMounted && (
