@@ -9,6 +9,8 @@ export interface SiteConfig {
   author: string
   description?: string
   language?: string
+  showICP: boolean
+  ICPInfo: string
 
   twitter?: string
   github?: string
