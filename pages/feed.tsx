@@ -32,7 +32,15 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
     site_url: config.host,
     feed_url: `${config.host}/feed.xml`,
     language: config.language,
-    ttl: ttlMinutes
+    ttl: ttlMinutes,
+    custom_elements: [
+      {
+        follow_challenge: {
+          feed_id: "68549423373706240",
+          user_id: "42017229988815872"
+        }
+      }
+    ]
   })
 
   for (const pagePath of Object.keys(siteMap.canonicalPageMap)) {
