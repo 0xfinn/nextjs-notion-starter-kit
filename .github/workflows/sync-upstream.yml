@@ -2,7 +2,7 @@ name: Sync upstream repo
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天同步一次（UTC时间）
+    - cron: '0 0 * * *' # 每天同步一次
   workflow_dispatch:
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
       - name: Git sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://github.com/transitive-bullshit/nextjs-notion-starter-kit.git"
+          source_repo: "git@github.com:transitive-bullshit/nextjs-notion-starter-kit.git"
           source_branch: "main"
-          destination_repo: "https://github.com/sylarxiong/nextjs-notion-starter-kit.git"
+          destination_repo: "git@github.com:sylarxiong/nextjs-notion-starter-kit.git"
           destination_branch: "main"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
