@@ -403,3 +403,31 @@
 .notion-equation.notion-equation-block{
   align-items: center;
 }
+
+
+/* ---- 新增内容 ------- */
+
+.notion-page-has-cover {
+  padding-top: 5px;
+}
+
+.notion-page-icon-hero.notion-page-icon-image {
+ display: none;
+}
+
+.notion-block-ba1e586b234812185aeec1c2caeb237 .notion-page-link {
+  justify-content: center;
+  padding: 2em;
+}
+
+.notion-block-1ba1e586b234812185aeec1c2caeb237 .notion-column {
+  padding: 0;
+}
+
+.notion-block-1ba1e586b23480e0ac1fc755a104c414 {
+  display: none;
+}
+
+.notion-block-1ba1e586b23481b39e51db13e6b4187c, .notion-block-1bc1e586b234805d8ee7f3e532e80656{
+  text-align: center;
+}

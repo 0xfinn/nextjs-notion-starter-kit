@@ -42,32 +42,34 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
-  pageUrlOverrides: null,
+  pageUrlOverrides: {
+    '/fantasy': '1ba1e586b234818e85dccca06d9fb5ed',
+    '/tech': '1ba1e586b23480a8b3add9f28c664e1f',
+    '/baby': '1ba1e586b23480e590f7e446a6f01720',
+    '/about': '1ba1e586b23481aba9bbcd5302f489f9'
+  },
+  // pageUrlOverrides: null,
 
-  // whether to use the default notion navigation style or a custom one with links to
-  // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
- // navigationStyle: 'default'
- navigationStyle: 'custom',
- navigationLinks: [
-   {
-     title: '幻想家',
-     pageId: '1ba1e586b234818e85dccca06d9fb5ed'
-   },
-   {
-     title: '技术',
-     pageId: '1ba1e586b23480a8b3add9f28c664e1f'
-   },
-   {
-     title: '育儿',
-     pageId: '1ba1e586b23480e590f7e446a6f01720'
-   },
-   {
-     title: '关于',
-     pageId: '1ba1e586b23481aba9bbcd5302f489f9'
-   }
- ]
+    // whether to use the default notion navigation style or a custom one with links to
+    // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: '幻想家',
+      pageId: '1ba1e586b234818e85dccca06d9fb5ed'
+    },
+    {
+      title: '技术',
+      pageId: '1ba1e586b23480a8b3add9f28c664e1f'
+    },
+    {
+      title: '育儿',
+      pageId: '1ba1e586b23480e590f7e446a6f01720'
+    },
+    {
+      title: '关于',
+      pageId: '1ba1e586b23481aba9bbcd5302f489f9'
+    }
+  ]
 })
