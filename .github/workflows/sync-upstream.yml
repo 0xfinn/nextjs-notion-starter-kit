@@ -1,4 +1,4 @@
-name: Sync upstream repo
+name: Sync Fork
 
 on:
   schedule:
@@ -8,17 +8,24 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout target repo
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
-      - name: Git sync
-        uses: wei/git-sync@v3
-        with:
-          source_repo: "git@github.com:transitive-bullshit/nextjs-notion-starter-kit.git"
-          source_branch: "main"
-          destination_repo: "git@github.com:sylarxiong/nextjs-notion-starter-kit.git"
-          destination_branch: "main"
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+    steps:
+      - name: Checkout destination repo
+        uses: actions/checkout@v3
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global --add safe.directory /github/workspace
+
+      - name: Sync upstream repo
+        run: |
+          git clone git@github.com:sylarxiong/nextjs-notion-starter-kit.git repo
+          cd repo
+          git remote add upstream git@github.com:transitive-bullshit/nextjs-notion-starter-kit.git
+          git fetch upstream
+          git merge upstream/main
+          git push origin main
