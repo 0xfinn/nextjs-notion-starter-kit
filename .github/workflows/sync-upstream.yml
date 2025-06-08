@@ -23,7 +23,7 @@ jobs:
 
       - name: Sync upstream repo
         run: |
-          git clone git@github.com:sylarxiong/nextjs-notion-starter-kit.git repo
+          git clone git@github.com:0xfinn/nextjs-notion-starter-kit.git repo
           cd repo
           git remote add upstream git@github.com:transitive-bullshit/nextjs-notion-starter-kit.git
           git fetch upstream
